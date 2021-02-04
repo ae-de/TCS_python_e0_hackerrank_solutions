@@ -1,0 +1,36 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'generateList' function below.
+#
+# The function accepts following parameters:
+#  1. INTEGER startvalue
+#  2. INTEGER endvalue
+#
+
+def generateList(startvalue, endvalue):
+    # Write your code here
+    a = list(range(startvalue,startvalue+3))
+    b = list(range(endvalue, endvalue-5,-1))
+    c = list(range(startvalue,endvalue,4))
+    d = list(range(endvalue,startvalue-1,-2))
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+    
+
+if __name__ == '__main__':
+    startvalue = int(input().strip())
+
+    endvalue = int(input().strip())
+
+    generateList(startvalue, endvalue)
